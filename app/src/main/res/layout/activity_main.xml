@@ -15,6 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="30dp"
+        android:fontFamily="@font/montserrat"
         android:gravity="center"
         android:text="QuizWhiz!"
         android:textColor="#FFFFFF"
@@ -27,7 +28,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:background="@android:color/white"
-        app:cardCornerRadius="8dp"
+        app:cardCornerRadius="18dp"
         app:cardElevation="5dp"
         >
 
@@ -36,17 +37,22 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="16dp">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/playfair_display"
                 android:gravity="center"
                 android:text="Welcome!"
                 android:textSize="30sp"
                 android:textStyle="bold">
 
+            </TextView>
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/playfair_display"
                 android:gravity="center"
                 android:text="Please enter your name:"
                 android:textSize="16sp"
@@ -65,7 +71,7 @@
                     android:layout_height="wrap_content"
                     android:hint="Name"
                     android:textColor="#A9A9A9"
-                    android:textColorHint="A9A9A9"
+                    android:textColorHint="#A9A9A9"
                     android:textAlignment="center"/>
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -76,7 +82,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="14dp"
                 android:background="@color/purple_500"
-                android:text="Proceed to Game">
+                android:fontFamily="@font/playfair_display"
+                android:text="Proceed to Game"
+                android:textStyle="bold">
 
             </Button>
 

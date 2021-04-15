@@ -10,7 +10,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HappyBirthday">
-        <activity android:name="com.example.happybirthday.MainActivity"
+        <activity android:name=".QuizQuestions">
+
+        </activity>
+        <activity
+            android:name=".MainActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize"
             tools:ignore="ExtraText">
@@ -20,6 +24,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
