@@ -11,8 +11,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HappyBirthday">
         <activity android:name=".QuizQuestionsActivity"
-            android:screenOrientation="portrait"></activity>
-        <activity android:name=".QuizQuestions"></activity>
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".QuizQuestions">
+
+        </activity>
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait"
