@@ -1,6 +1,6 @@
 package com.example.happybirthday
 
-class Question (
+data class Question (
     val id: Int,
     val question: String,
     val image: Int,

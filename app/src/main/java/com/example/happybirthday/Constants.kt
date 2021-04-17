@@ -30,6 +30,8 @@ object Constants{
             1
         )
 
+        questionsList.add(que2)
+
         //3
         val que3 = Question(
             3,
@@ -41,6 +43,8 @@ object Constants{
             "Green and purple",
             1
         )
+
+        questionsList.add(que3)
 
         //4
         val que4 = Question(
@@ -54,6 +58,8 @@ object Constants{
             1
         )
 
+        questionsList.add(que4)
+
         //5
         val que5 = Question(
             5,
@@ -65,6 +71,8 @@ object Constants{
             "A huge group of wonderful friends",
             1
         )
+
+        questionsList.add(que5)
 
         //6
         val que6 = Question(
@@ -78,6 +86,8 @@ object Constants{
             1
         )
 
+        questionsList.add(que6)
+
         //7
         val que7 = Question(
             7,
@@ -89,6 +99,8 @@ object Constants{
             "Wisdom or a unique skill of some sort",
             1
         )
+
+        questionsList.add(que7)
 
         //8
         val que8 = Question(
@@ -102,6 +114,8 @@ object Constants{
             1
         )
 
+        questionsList.add(que8)
+
         //9
         val que9 = Question(
             9,
@@ -114,6 +128,8 @@ object Constants{
             1
         )
 
+        questionsList.add(que9)
+
         //10
         val que10 = Question(
             10,
@@ -125,6 +141,8 @@ object Constants{
             "A bit modest but full of love",
             1
         )
+
+        questionsList.add(que10)
 
         return questionsList
     }
