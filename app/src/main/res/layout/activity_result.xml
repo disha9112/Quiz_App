@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -62,53 +63,13 @@
         android:textSize="20sp"
         tools:text="Your points are 100" />
 
-    <TextView
-        android:id="@+id/tv_fire"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:fontFamily="@font/montserrat"
-        android:textColor="@android:color/white"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        android:gravity="center"
-        tools:text="For a score of 100-160 points, your soul element is FIRE" />
+    <ImageView
 
-    <TextView
-        android:id="@+id/tv_air"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:fontFamily="@font/montserrat"
-        android:textColor="@android:color/white"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        android:gravity="center"
-        tools:text="For a score of 170-240 points, your soul element is AIR" />
+        android:id="@+id/imageView"
+        android:layout_width="351dp"
+        android:layout_height="346dp"
+        app:srcCompat="@drawable/Elements" />
 
-    <TextView
-        android:id="@+id/tv_water"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:fontFamily="@font/montserrat"
-        android:textColor="@android:color/white"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        android:gravity="center"
-        tools:text="For a score of 250-320 points, your soul element is WATER" />
-
-    <TextView
-        android:id="@+id/tv_earth"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:fontFamily="@font/montserrat"
-        android:textColor="@android:color/white"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        android:gravity="center"
-        tools:text="For a score of 330-400 points, your soul element is EARTH" />
 
     <Button
         android:id="@+id/btn_finish"
