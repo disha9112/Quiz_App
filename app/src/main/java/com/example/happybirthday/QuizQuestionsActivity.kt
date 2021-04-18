@@ -1,5 +1,6 @@
 package com.example.happybirthday
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.graphics.Color
 import android.graphics.Typeface
@@ -10,12 +11,13 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_quiz_questions.*
 
 class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
 
     private var mCurrentPosition:Int = 1
-    private var mQuestionsList:ArrayList<Question>? = null;
+    private var mQuestionsList:ArrayList<Question>? = null
     private var mSelectedOptionPosition : Int = 0
     private var mCorrectAnswers: Int = 0
     private var mUserName: String? = null
@@ -42,6 +44,7 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
 
     }
 
+    @SuppressLint("SetTextI18n")
     private fun setQuestion(){
 
 
@@ -58,7 +61,7 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
 
         progressBar.progress = mCurrentPosition
         tv_progress.text = "$mCurrentPosition" + "/" + progressBar.max
-        tv_question.text = question!!.question
+        tv_question.text = question.question
 
         tv_option_one.text = question.optionOne
         tv_option_two.text = question.optionTwo
@@ -85,6 +88,7 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
 
     }
 
+    @SuppressLint("SetTextI18n")
     override fun onClick(v: View?) {
         when(v?.id){
             R.id.tv_option_one ->{
@@ -122,31 +126,39 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
                     // answerView(mSelectedOptionPosition, R.drawable.wrong_option_border_bg)
                     //  }
                     if(question!!.correctAnswer40 == mSelectedOptionPosition){
-                        mCorrectAnswers += 40;
+                        mCorrectAnswers += 40
                         answerView(question.correctAnswer40, R.drawable.correct_option_border_bg)
                     }
-                    else if(question!!.correctAnswer30 == mSelectedOptionPosition){
-                        mCorrectAnswers += 30;
+                    if(question.correctAnswer30 == mSelectedOptionPosition){
+                        mCorrectAnswers += 30
                         answerView(question.correctAnswer30, R.drawable.correct_option_border_bg)
                     }
-                    else if(question!!.correctAnswer20 == mSelectedOptionPosition){
-                        mCorrectAnswers += 20;
+                    if(question.correctAnswer20 == mSelectedOptionPosition){
+                        mCorrectAnswers += 20
                         answerView(question.correctAnswer20, R.drawable.correct_option_border_bg)
                     }
-                    else if(question!!.correctAnswer10 == mSelectedOptionPosition){
-                        mCorrectAnswers += 10;
+                    if(question.correctAnswer10 == mSelectedOptionPosition){
+                        mCorrectAnswers += 10
                         answerView(question.correctAnswer10, R.drawable.correct_option_border_bg)
                     }
-                    else{
-                        Toast.makeText(
-                                this,
-                                "Please choose any option", Toast.LENGTH_SHORT
-                        ).show()
-                    }
+
+                 //  btn_submit.setOnClickListener {
+
+                       //if(
+                       //question!!.correctAnswer40 != mSelectedOptionPosition ||
+                               //     question!!.correctAnswer30 != mSelectedOptionPosition ||
+                              //      question!!.correctAnswer20 != mSelectedOptionPosition ||
+                             //       question!!.correctAnswer10 != mSelectedOptionPosition )  {
+                        //   Toast.makeText(
+                        //       this,
+                       //       "Please choose any option", Toast.LENGTH_SHORT).show()
+                     //  }
+                  // }
+
 
 
                     if(mCurrentPosition == mQuestionsList!!.size){
-                        btn_submit.text = "FINISH"
+                        this.btn_submit.text = "FINISH"
                     }else{
                         btn_submit.text = "GO TO NEXT QUESTION"
                     }
