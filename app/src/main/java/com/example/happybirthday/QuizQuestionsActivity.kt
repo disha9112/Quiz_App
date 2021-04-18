@@ -1,5 +1,6 @@
 package com.example.happybirthday
 
+import android.content.Intent
 import android.graphics.Color
 import android.graphics.Typeface
 import android.os.Bundle
@@ -17,11 +18,14 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
     private var mQuestionsList:ArrayList<Question>? = null;
     private var mSelectedOptionPosition : Int = 0
     private var mCorrectAnswers: Int = 0
+    private var mUserName: String? = null
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_quiz_questions)
+
+        mUserName = intent.getStringExtra(Constants.USER_NAME)
 
         val questionsList = Constants.getQuestions()
         Log.i("Questions Size", "${questionsList.size}")
@@ -103,38 +107,42 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
                         mCurrentPosition <= mQuestionsList!!.size ->{
                             setQuestion()
                         }else ->{
-                        Toast.makeText(this,
-                            "You have successfully completed the quiz" ,
-                            Toast.LENGTH_SHORT).show()
+                        val intent = Intent(this, ResultActivity::class.java)
+                        intent.putExtra(Constants.USER_NAME, mUserName)
+                        intent.putExtra(Constants.CORRECT_ANSWERS, mCorrectAnswers)
+                        intent.putExtra(Constants.TOTAL_QUESTIONS, mQuestionsList!!.size)
+                        startActivity(intent)
+                        finish()
+
                     }
                     }
                 } else{
                     val question = mQuestionsList?.get(mCurrentPosition - 1)
                     //if(question!!.correctAnswer40 == mSelectedOptionPosition ){
-                       // answerView(mSelectedOptionPosition, R.drawable.wrong_option_border_bg)
-                  //  }
-                if(question!!.correctAnswer40 == mSelectedOptionPosition){
-                       mCorrectAnswers += 40;
-                    answerView(question.correctAnswer40, R.drawable.correct_option_border_bg)
+                    // answerView(mSelectedOptionPosition, R.drawable.wrong_option_border_bg)
+                    //  }
+                    if(question!!.correctAnswer40 == mSelectedOptionPosition){
+                        mCorrectAnswers += 40;
+                        answerView(question.correctAnswer40, R.drawable.correct_option_border_bg)
                     }
-                else if(question!!.correctAnswer30 == mSelectedOptionPosition){
-                    mCorrectAnswers += 30;
-                    answerView(question.correctAnswer30, R.drawable.correct_option_border_bg)
-                }
-                else if(question!!.correctAnswer20 == mSelectedOptionPosition){
-                    mCorrectAnswers += 20;
-                    answerView(question.correctAnswer20, R.drawable.correct_option_border_bg)
-                }
-                else if(question!!.correctAnswer10 == mSelectedOptionPosition){
-                    mCorrectAnswers += 10;
-                    answerView(question.correctAnswer10, R.drawable.correct_option_border_bg)
-                }
-                else{
-                    Toast.makeText(
-                        this,
-                        "Please choose any option", Toast.LENGTH_SHORT
-                    ).show()
-                }
+                    else if(question!!.correctAnswer30 == mSelectedOptionPosition){
+                        mCorrectAnswers += 30;
+                        answerView(question.correctAnswer30, R.drawable.correct_option_border_bg)
+                    }
+                    else if(question!!.correctAnswer20 == mSelectedOptionPosition){
+                        mCorrectAnswers += 20;
+                        answerView(question.correctAnswer20, R.drawable.correct_option_border_bg)
+                    }
+                    else if(question!!.correctAnswer10 == mSelectedOptionPosition){
+                        mCorrectAnswers += 10;
+                        answerView(question.correctAnswer10, R.drawable.correct_option_border_bg)
+                    }
+                    else{
+                        Toast.makeText(
+                                this,
+                                "Please choose any option", Toast.LENGTH_SHORT
+                        ).show()
+                    }
 
 
                     if(mCurrentPosition == mQuestionsList!!.size){
@@ -153,22 +161,22 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
         when(answer){
             1 ->{
                 tv_option_one.background = ContextCompat.getDrawable(
-                    this, drawableView
+                        this, drawableView
                 )
             }
             2 ->{
                 tv_option_two.background = ContextCompat.getDrawable(
-                    this, drawableView
+                        this, drawableView
                 )
             }
             3 ->{
                 tv_option_three.background = ContextCompat.getDrawable(
-                    this, drawableView
+                        this, drawableView
                 )
             }
             4 ->{
                 tv_option_four.background = ContextCompat.getDrawable(
-                    this, drawableView
+                        this, drawableView
                 )
 
             }
