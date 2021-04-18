@@ -8,8 +8,8 @@ data class Question (
     val optionTwo: String,
     val optionThree: String,
     val optionFour: String,
-    val correctAnswer: Int
-    //val correctAnswer30: Int,
-    //val correctAnswer20: Int,
-   // val correctAnswer10: Int
+    val correctAnswer40: Int,
+    val correctAnswer30: Int,
+    val correctAnswer20: Int,
+    val correctAnswer10: Int
 )

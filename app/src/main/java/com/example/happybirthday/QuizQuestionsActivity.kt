@@ -110,12 +110,32 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
                     }
                 } else{
                     val question = mQuestionsList?.get(mCurrentPosition - 1)
-                    if(question!!.correctAnswer != mSelectedOptionPosition){
-                        answerView(mSelectedOptionPosition, R.drawable.wrong_option_border_bg)
-                    }else{
-                       mCorrectAnswers++
+                    //if(question!!.correctAnswer40 == mSelectedOptionPosition ){
+                       // answerView(mSelectedOptionPosition, R.drawable.wrong_option_border_bg)
+                  //  }
+                if(question!!.correctAnswer40 == mSelectedOptionPosition){
+                       mCorrectAnswers += 40;
+                    answerView(question.correctAnswer40, R.drawable.correct_option_border_bg)
                     }
-                    answerView(question.correctAnswer, R.drawable.correct_option_border_bg)
+                else if(question!!.correctAnswer30 == mSelectedOptionPosition){
+                    mCorrectAnswers += 30;
+                    answerView(question.correctAnswer30, R.drawable.correct_option_border_bg)
+                }
+                else if(question!!.correctAnswer20 == mSelectedOptionPosition){
+                    mCorrectAnswers += 20;
+                    answerView(question.correctAnswer20, R.drawable.correct_option_border_bg)
+                }
+                else if(question!!.correctAnswer10 == mSelectedOptionPosition){
+                    mCorrectAnswers += 10;
+                    answerView(question.correctAnswer10, R.drawable.correct_option_border_bg)
+                }
+                else{
+                    Toast.makeText(
+                        this,
+                        "Please choose any option", Toast.LENGTH_SHORT
+                    ).show()
+                }
+
 
                     if(mCurrentPosition == mQuestionsList!!.size){
                         btn_submit.text = "FINISH"

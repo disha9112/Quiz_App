@@ -13,7 +13,11 @@ object Constants{
             "Creative, decisive and clever",
             "Chill, easy-going, and laid-back",
             "Passionate, emotional and protective",
-            1
+            2,
+            3,
+            1,
+            4
+
         )
 
         questionsList.add(que1)
@@ -27,7 +31,10 @@ object Constants{
             "Horses",
             "Butterflies",
             "Dolphins",
-            1
+            1,
+            4,
+            3,
+            2
         )
 
         questionsList.add(que2)
@@ -41,7 +48,10 @@ object Constants{
             "Blue and green",
             "Red and orange",
             "Green and purple",
-            1
+            1,
+            2,
+            4,
+            3
         )
 
         questionsList.add(que3)
@@ -52,10 +62,13 @@ object Constants{
             "What's your favorite movie genre?",
             R.drawable.cutecat,
             "Thriller, mystery, horror",
-            "Thriller, mystery, horror",
+            "Comedy or action movies",
             "Adventure and romantic",
             "Drama or educational documentaries",
-            1
+            4,
+            1,
+            2,
+            3
         )
 
         questionsList.add(que4)
@@ -69,6 +82,9 @@ object Constants{
             "About 5-10",
             "Just 2-3 close friends",
             "A huge group of wonderful friends",
+            3,
+            2,
+            4,
             1
         )
 
@@ -83,7 +99,10 @@ object Constants{
             "Heavy metal",
             "Classical",
             "Latest hits",
-            1
+            3,
+            4,
+            1,
+            2
         )
 
         questionsList.add(que6)
@@ -97,7 +116,10 @@ object Constants{
             "Probably invincibility or immortality",
             "Something that would bring me more attention and love",
             "Wisdom or a unique skill of some sort",
-            1
+            4,
+            2,
+            1,
+            3
         )
 
         questionsList.add(que7)
@@ -111,6 +133,9 @@ object Constants{
             "It would be hard but I'd try to accept that they're gone",
             "I'd remember all the good times together and focus on the positive to make the pain go away",
             "I'd give it some time to sink in and left myself feel all the emotions that would come with it",
+            2,
+            4,
+            3,
             1
         )
 
@@ -125,7 +150,10 @@ object Constants{
             "Save it",
             "Spend all of it",
             "Give half to family and spend the other half helping the homeless",
-            1
+            2,
+            4,
+            1,
+            3
         )
 
         questionsList.add(que9)
@@ -139,7 +167,10 @@ object Constants{
             "Full of fun and positive vibes",
             "Emotional",
             "A bit modest but full of love",
-            1
+            1,
+            2,
+            3,
+            4
         )
 
         questionsList.add(que10)
