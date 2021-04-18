@@ -135,7 +135,7 @@ object Constants{
                 R.drawable.cutecat,
                 "I'd definitely grieve and cry for a very long time",
                 "It would be hard but I'd try to accept that they're gone",
-                "I'd remember all the good times together and focus on the positive to make the pain go away",
+                "I'd try to focus on the positive to make the pain go away",
                 "I'd give it some time to sink in and left myself feel all the emotions that would come with it",
                 2,
                 4,

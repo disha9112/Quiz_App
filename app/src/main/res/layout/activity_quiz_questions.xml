@@ -4,24 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true"
-    tools:context=".QuizQuestionsActivity">
+    android:background="@drawable/quiz_template2"
 
+    tools:context=".QuizQuestionsActivity">
 
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+
         android:orientation="vertical"
-        android:gravity="center"
-        android:padding="16dp"
-        >
+        android:padding="16dp">
 
         <LinearLayout
             android:id="@+id/ll_progress_details"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="10dp"
             android:gravity="center_vertical"
             android:orientation="horizontal">
 
@@ -31,11 +30,10 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:indeterminate="false"
                 android:max="10"
                 android:minHeight="50dp"
-                android:progress="0"
-                android:indeterminate="false"
-                />
+                android:progress="0" />
 
             <TextView
                 android:id="@+id/tv_progress"
@@ -43,37 +41,38 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:padding="15dp"
+                android:text="0/10"
                 android:textColorHint="#7A8089"
-                android:textSize="14sp"
-                android:text="0/10" />
+                android:textSize="14sp" />
 
         </LinearLayout>
 
+
         <TextView
             android:id="@+id/tv_question"
-            android:layout_width="match_parent"
+            android:layout_width="363dp"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="100dp"
+            android:fontFamily="@font/montserrat"
             android:gravity="center"
-            android:textColor="#363A50"
-            android:textSize="22sp"
-            android:text="default text question?"/>
-
-
-
-
+            android:text="Let's see your soul element!"
+            android:textColor="#DFDF1B"
+            android:textSize="25sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/tv_option_one"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
+
             android:background="@drawable/default_option_border_bg"
             android:gravity="center"
             android:padding="15dp"
+            android:text="random default"
             android:textColor="#7A8089"
-            android:textSize="18sp"
-            android:text="random default" />
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/tv_option_two"
@@ -83,9 +82,9 @@
             android:background="@drawable/default_option_border_bg"
             android:gravity="center"
             android:padding="15dp"
+            android:text="random default"
             android:textColor="#7A8089"
-            android:textSize="18sp"
-            android:text="random default" />
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/tv_option_three"
@@ -95,9 +94,9 @@
             android:background="@drawable/default_option_border_bg"
             android:gravity="center"
             android:padding="15dp"
+            android:text="random default"
             android:textColor="#7A8089"
-            android:textSize="18sp"
-            android:text="random default" />
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/tv_option_four"
@@ -107,9 +106,9 @@
             android:background="@drawable/default_option_border_bg"
             android:gravity="center"
             android:padding="15dp"
+            android:text="random default"
             android:textColor="#7A8089"
-            android:textSize="18sp"
-            android:text="random default" />
+            android:textSize="18sp" />
 
         <Button
             android:id="@+id/btn_submit"
