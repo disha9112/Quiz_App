@@ -18,7 +18,7 @@
         android:fontFamily="@font/montserrat"
         android:text="Results"
         android:textColor="#DFDF1B"
-        android:textSize="31sp"
+        android:textSize="28sp"
         android:textStyle="bold" />
 
     <TextView
@@ -51,7 +51,7 @@
         android:gravity="center"
         android:text="Let's see your soul element!"
         android:textColor="#DFDF1B"
-        android:textSize="25sp"
+        android:textSize="23sp"
         android:textStyle="bold" />
 
     <TextView
@@ -65,8 +65,6 @@
         tools:text="Your points are 100" />
 
 
-
-
     <Button
         android:id="@+id/btn_finish"
         android:layout_width="match_parent"
@@ -74,9 +72,9 @@
         android:layout_marginTop="350dp"
         android:background="@android:color/white"
         android:text="EXIT"
-        android:textColor="@color/white"
+        android:textColor="#DFDF1B"
         android:textSize="18sp"
-        android:textStyle="bold"/>
+        android:textStyle="bold" />
 
 
 

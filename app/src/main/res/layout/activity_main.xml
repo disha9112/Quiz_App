@@ -53,7 +53,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/playfair_display"
+                android:fontFamily="@font/montserrat"
                 android:gravity="center"
                 android:text="Welcome!"
                 android:textSize="30sp"
@@ -64,7 +64,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/playfair_display"
+                android:fontFamily="@font/montserrat"
                 android:gravity="center"
                 android:text="Please enter your name:"
                 android:textSize="16sp"
@@ -95,8 +95,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="14dp"
                 android:background="@color/purple_500"
-                android:fontFamily="@font/playfair_display"
+                android:fontFamily="@font/montserrat"
                 android:text="Proceed to Game"
+                android:textColor="#DFDF1B"
+                android:textSize="14sp"
                 android:textStyle="bold">
 
             </Button>
