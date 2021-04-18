@@ -21,11 +21,12 @@
         android:textStyle="bold" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="330dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="10dp"
         android:fontFamily="@font/montserrat"
-        android:text="Let's see your soul element!"
+        android:gravity="center"
+        android:text="Congratulations,"
         android:textColor="@android:color/white"
         android:textSize="25sp"
         android:textStyle="bold" />
@@ -34,12 +35,22 @@
         android:id="@+id/tv_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="3dp"
         android:fontFamily="@font/montserrat"
         android:textColor="@android:color/white"
-        android:textSize="22sp"
+        android:textSize="24sp"
         android:textStyle="bold"
         tools:text="Username" />
+    <TextView
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:text="Let's see your soul element!"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/tv_score"
@@ -60,6 +71,7 @@
         android:textColor="@android:color/white"
         android:textSize="22sp"
         android:textStyle="bold"
+        android:gravity="center"
         tools:text="For a score of 100-160 points, your soul element is FIRE" />
 
     <TextView
@@ -71,6 +83,7 @@
         android:textColor="@android:color/white"
         android:textSize="22sp"
         android:textStyle="bold"
+        android:gravity="center"
         tools:text="For a score of 170-240 points, your soul element is AIR" />
 
     <TextView
@@ -82,6 +95,7 @@
         android:textColor="@android:color/white"
         android:textSize="22sp"
         android:textStyle="bold"
+        android:gravity="center"
         tools:text="For a score of 250-320 points, your soul element is WATER" />
 
     <TextView
@@ -93,6 +107,7 @@
         android:textColor="@android:color/white"
         android:textSize="22sp"
         android:textStyle="bold"
+        android:gravity="center"
         tools:text="For a score of 330-400 points, your soul element is EARTH" />
 
     <Button
