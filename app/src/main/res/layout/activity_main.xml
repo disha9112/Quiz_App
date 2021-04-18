@@ -7,19 +7,31 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    android:background="@drawable/quiz1"
+    android:background="@drawable/landing_screen"
     tools:context="com.example.happybirthday.MainActivity">
 
     <TextView
         android:id="@+id/tv_app_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:text="QuizWhiz"
+        android:textColor="#DFDF1B"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="30dp"
         android:fontFamily="@font/montserrat"
         android:gravity="center"
-        android:text="QuizWhiz!"
-        android:textColor="#FFFFFF"
-        android:textSize="36sp"
+        android:text="Find out your soul element!"
+        android:textColor="#DFDF1B"
+        android:textSize="30sp"
         android:textStyle="bold" />
 
     <androidx.cardview.widget.CardView

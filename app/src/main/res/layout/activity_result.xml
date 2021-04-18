@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-    android:background="@drawable/quiz1"
+    android:background="@drawable/finalresults"
     android:padding="20dp"
     tools:context=".MainActivity">
 
@@ -17,7 +17,7 @@
         android:layout_marginTop="25dp"
         android:fontFamily="@font/montserrat"
         android:text="Results"
-        android:textColor="#FFFFFF"
+        android:textColor="#DFDF1B"
         android:textSize="25sp"
         android:textStyle="bold" />
 
@@ -28,7 +28,7 @@
         android:fontFamily="@font/montserrat"
         android:gravity="center"
         android:text="Congratulations,"
-        android:textColor="@android:color/white"
+        android:textColor="#DFDF1B"
         android:textSize="25sp"
         android:textStyle="bold" />
 
@@ -42,6 +42,7 @@
         android:textSize="24sp"
         android:textStyle="bold"
         tools:text="Username" />
+
     <TextView
         android:layout_width="330dp"
         android:layout_height="wrap_content"
@@ -49,7 +50,7 @@
         android:fontFamily="@font/montserrat"
         android:gravity="center"
         android:text="Let's see your soul element!"
-        android:textColor="@android:color/white"
+        android:textColor="#DFDF1B"
         android:textSize="25sp"
         android:textStyle="bold" />
 
@@ -63,19 +64,14 @@
         android:textSize="20sp"
         tools:text="Your points are 100" />
 
-    <ImageView
 
-        android:id="@+id/imageView"
-        android:layout_width="351dp"
-        android:layout_height="346dp"
-        app:srcCompat="@drawable/Elements" />
 
 
     <Button
         android:id="@+id/btn_finish"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="350dp"
         android:background="@android:color/white"
         android:text="EXIT"
         android:textColor="@color/white"
