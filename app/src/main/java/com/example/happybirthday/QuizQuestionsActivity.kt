@@ -27,8 +27,8 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
 
         mUserName = intent.getStringExtra(Constants.USER_NAME)
 
-        val questionsList = Constants.getQuestions()
-        Log.i("Questions Size", "${questionsList.size}")
+        val questionsList = Constants.getQuestions() //should we delete this part?
+        Log.i("Questions Size", "${questionsList.size}") //should we delete this part?
 
         mQuestionsList = Constants.getQuestions()
 
@@ -110,7 +110,7 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
                         val intent = Intent(this, ResultActivity::class.java)
                         intent.putExtra(Constants.USER_NAME, mUserName)
                         intent.putExtra(Constants.CORRECT_ANSWERS, mCorrectAnswers)
-                        intent.putExtra(Constants.TOTAL_QUESTIONS, mQuestionsList!!.size)
+                        intent.putExtra(Constants.TOTAL_QUESTIONS, mQuestionsList!!.size) //is this needed?
                         startActivity(intent)
                         finish()
 
