@@ -10,14 +10,14 @@ class ResultActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_result)
 
-        val username = intent.getStringArrayExtra(Constants.USER_NAME)
+        val username = intent.getStringExtra(Constants.USER_NAME)
 
-        tv_name.text = username.toString() //doubt to remove toString()
+        tv_name.text = username
 
-        val totalQuestions = intent.getIntExtra(Constants.TOTAL_QUESTIONS, 0)
+
         val correctAnswer = intent.getIntExtra(Constants.CORRECT_ANSWERS, 0)
 
-        tv_score.text = "Your Score is $correctAnswer out of $totalQuestions"
+        tv_score.text = "Your Score is $correctAnswer"
 
         btn_finish.setOnClickListener {
             startActivity(Intent(this, MainActivity::class.java))
