@@ -70,6 +70,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="350dp"
+        android:fontFamily="@font/montserrat"
         android:background="@android:color/white"
         android:text="EXIT"
         android:textColor="#DFDF1B"
