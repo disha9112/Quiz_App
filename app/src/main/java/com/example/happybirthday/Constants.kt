@@ -3,7 +3,6 @@ package com.example.happybirthday
 object Constants{
 
     const val USER_NAME: String = "user_name"
-    const val TOTAL_QUESTIONS: String = "total_questions"
     const val CORRECT_ANSWERS: String = "correct_answers"
 
     fun getQuestions(): ArrayList<Question>{
@@ -12,7 +11,6 @@ object Constants{
         val que1 = Question(
                 1,
                 "What three words best describe your personality?",
-                R.drawable.cutecat,
                 "Fun, playful and friendly",
                 "Creative, decisive and clever",
                 "Chill, easy-going, and laid-back",
@@ -30,7 +28,6 @@ object Constants{
         val que2 = Question(
                 2,
                 "Which of these animals do you like the most?",
-                R.drawable.cutecat,
                 "Dogs",
                 "Horses",
                 "Butterflies",
@@ -47,7 +44,6 @@ object Constants{
         val que3 = Question(
                 3,
                 "Which color combo do you like the most?",
-                R.drawable.cutecat,
                 "Black and brown",
                 "Blue and green",
                 "Red and orange",
@@ -64,7 +60,6 @@ object Constants{
         val que4 = Question(
                 4,
                 "What's your favorite movie genre?",
-                R.drawable.cutecat,
                 "Thriller, mystery, horror",
                 "Comedy or action movies",
                 "Adventure and romantic",
@@ -81,7 +76,6 @@ object Constants{
         val que5 = Question(
                 5,
                 "How many friends do you have?",
-                R.drawable.cutecat,
                 "A few different groups with a couple people in each",
                 "About 5-10",
                 "Just 2-3 close friends",
@@ -98,7 +92,6 @@ object Constants{
         val que6 = Question(
                 6,
                 "Which of these music genres do you like the most?",
-                R.drawable.cutecat,
                 "Soft rock",
                 "Heavy metal",
                 "Classical",
@@ -115,7 +108,6 @@ object Constants{
         val que7 = Question(
                 7,
                 " Which magical charm would you like to have?",
-                R.drawable.cutecat,
                 "Something that would make me completely free or extremely powerful",
                 "Probably invincibility or immortality",
                 "Something that would bring me more attention and love",
@@ -132,11 +124,10 @@ object Constants{
         val que8 = Question(
                 8,
                 "If someone you love died, how would you handle it?",
-                R.drawable.cutecat,
                 "I'd grieve and cry for a  long time",
                 "It would be hard but I'd try to accept that they're gone",
                 "I'd focus on all the good times together to make the pain go away",
-                "I'd give it some time to sink in and left myself feel all the emotions that would come with it",
+                "I'd give it some time to sink in and let myself feel all the emotions that would come with it",
                 2,
                 4,
                 3,
@@ -149,7 +140,6 @@ object Constants{
         val que9 = Question(
                 9,
                 "If you had 1 million dollars, what would you do with it?",
-                R.drawable.cutecat,
                 "Donate it to a charity",
                 "Save it",
                 "Spend all of it",
@@ -166,7 +156,6 @@ object Constants{
         val que10 = Question(
                 10,
                 "How would you describe your life?",
-                R.drawable.cutecat,
                 "A big spotlight of attention!",
                 "Full of fun and positive vibes",
                 "Emotional",
